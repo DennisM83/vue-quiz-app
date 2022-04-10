@@ -1,15 +1,21 @@
 <template>
   <div class="ctr">
+    <newQuestions />
+    <newResult />
     <button type="button" class="reset-btn">Reset</button>
   </div>
 </template>
 
 <script>
-
-
+import newQuestions from '@/components/newQuestions'
+import newResult from "@/components/newResult";
 
 export default {
   name: 'App',
+  components: {
+    newQuestions,
+    newResult
+  },
   data () {
     return {
       questions: [
